@@ -241,6 +241,11 @@ main {
   resize: none;
 }
 
+.txt-char-max {
+  font-size: small;
+  margin-top: -8px;
+}
+
 /* || MEDIA QUERIES FOR RESPONSIVE DESIGN */
 
 @media all and (max-width: 500px) {
