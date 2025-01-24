@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - React App</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/kd-favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Reset/Normalization -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.production.css" type="text/css">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Logo -->
+        <img src="img/kd-logo.svg" alt="Personal logo of Kari Dreyer, a text logo in uppercase letters that consists of my name" class="page-header__item" >
+        
+        <!-- Navigation -->
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" aria-label="About Kari" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="work-content">
+        <h1>Work</h1>
+        <div class="project-item">
+            <h2>MovieNest - React App</h2>
+            <p>The Move Nest App is a single-page, responsive app built with React. It was designed as a client-side project to support the server-side Movie Nest API, which was built to facilitate user requests and render the response from the server-side via a number of different interface views. The app allows users to sign in and view details about movies, such as information about the genre and director. The app also allows users to save movies to a list of their favourites, and update their profile information. </p>
+            <div class="project-photos">
+                <img src="img/movienest-home.png" alt="Screenshot of the MovieNest home screen" />
+                <img src="img/movienest-details.png" alt="Screenshot of the MovieNest details screen" />
+            </div>
+            <h4>Features (by View)</h4>
+            <ul>
+                <li><strong>Main view</strong>
+                  <ul>
+                    <li>Returns ALL movies to the user (each movie item with an image, title, and description)</li>
+                    <li>Filtering the list of movies with a “search” feature</li>
+                    <li>Ability to select a movie for more details</li>
+                    <li>Ability to log out</li>
+                    <li>Ability to navigate to Profile view</li>
+                  </ul>
+                </li>
+                <li><strong>Single Movie view</strong>
+                  <ul>
+                    <li>Returns data (description, genre, director, image) about a single movie to the user</li>
+                    <li>Allows users to add and remove movies from their list of favourites</li>
+                  </ul>
+                </li>
+                <li><strong>Login view</strong>
+                  <ul>
+                    <li>Allows users to log in with a username and password</li>
+                  </ul>
+                </li>
+                <li><strong>Signup view</strong>
+                  <ul>
+                    <li>Allows new users to register (username, password, email, date of birth)</li>
+                  </ul>
+                </li>
+                <li><strong>Profile view</strong>
+                  <ul>
+                    <li>Displays user registration details</li>
+                    <li>Allows users to update their info (username, password, email, date of birth)</li>
+                    <li>Displays favorite movies</li>
+                    <li>Allows users to remove a movie from their list of favorites</li>
+                    <li>Allows existing users to deregister</li>
+                  </ul>
+                </li>
+              </ul>
+
+            <h4>Technologies Used</h4>
+            <ul>
+                <li><strong>React:</strong> A JavaScript library for building user interfaces, enabling a dynamic and component-based architecture.</li>
+                <li><strong>ES2015+:</strong> Modern JavaScript syntax and features, including classes, modules, and arrow functions, ensuring clean and efficient code.</li>
+                <li><strong>Bootstrap:</strong> A CSS framework for building responsive, mobile-first web applications with pre-designed components and styles.</li>
+                <li><strong>Parcel:</strong> A fast, zero-config web application bundler, simplifying asset compilation and dependency management.</li>
+              </ul>
+
+            <a href="https://movienest-app.netlify.app/" target="_blank" rel="noopener noreferrer">View the Project</a> <br>
+            <a href="https://github.com/karidreyer/MovieNest-client" target="_blank" rel="noopener noreferrer">View the Project Repository</a>
+            <br>
+            <br>
+            <br>
+            <a href="work.html" class="button">Back to Projects</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://github.com/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/github_icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+</html>

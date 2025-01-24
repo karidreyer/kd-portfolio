@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - REST API</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/kd-favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Reset/Normalization -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.production.css" type="text/css">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Logo -->
+        <img src="img/kd-logo.svg" alt="Personal logo of Kari Dreyer, a text logo in uppercase letters that consists of my name" class="page-header__item" >
+        
+        <!-- Navigation -->
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" aria-label="About Kari" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="work-content">
+        <h1>Work</h1>
+        <div class="project-item">
+            <h2>MovieNest - REST API</h2>
+            <p>The MovieNest is a REST API is designed to provide users with comprehensive access to information on movies and related functionalities. Built for the MovieNest App, this API offers data retrieval options and user management features, enabling a rich and interactive movie browsing experience.</p>
+
+            <h4>Project Features</h4>
+            <ul>
+              <li>Users can signup and login to their accounts</li>
+              <li>Public (non-authenticated) users cannot access information</li>
+              <li>Authenticated users can access all movie information as well as add or remove movies to their list of favourites, edit their user information, and also delete their account.</li>
+            </ul>
+          
+            <h4>API Endpoints</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>HTTP Verbs</th>
+                  <th>Endpoints</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>POST</td>
+                  <td>/users</td>
+                  <td>A user can register for a new user account</td>
+                </tr>
+                <tr>
+                  <td>POST</td>
+                  <td>/login</td>
+                  <td>A user can login to an existing user account</td>
+                </tr>
+                <tr>
+                  <td>POST</td>
+                  <td>/users/:username/:movieID</td>
+                  <td>An authenticated user can add a movie to their list of favourite movies</td>
+                </tr>
+                <tr>
+                  <td>GET</td>
+                  <td>/users/:username</td>
+                  <td>An authenticated user can access their profile data</td>
+                </tr>
+                <tr>
+                  <td>GET</td>
+                  <td>/movies</td>
+                  <td>An authenticated user can access a list of all movies in the database</td>
+                </tr>
+                <tr>
+                  <td>GET</td>
+                  <td>/movies/:movieTitle</td>
+                  <td>An authenticated user can access data about a single movie</td>
+                </tr>
+                <tr>
+                  <td>GET</td>
+                  <td>/movies/genres/:genreName</td>
+                  <td>An authenticated user can access data about a movie genre</td>
+                </tr>
+                <tr>
+                  <td>GET</td>
+                  <td>/movies/directors/:directorID</td>
+                  <td>An authenticated user can access data about a director</td>
+                </tr>
+                <tr>
+                  <td>PUT</td>
+                  <td>/users/:username</td>
+                  <td>An authenticated user can update their profile data</td>
+                </tr>
+                <tr>
+                  <td>DELETE</td>
+                  <td>/users/:username/:movieID</td>
+                  <td>An authenticated user can remove a movie to their list of favourite movies</td>
+                </tr>
+                <tr>
+                  <td>DELETE</td>
+                  <td>/users/:username</td>
+                  <td>An authenticated user can delete their user account</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4>Technologies Used</h4>
+            <ul>
+                <li><strong>NodeJS:</strong> This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.</li>
+                <li><strong>ExpressJS:</strong> This is a NodeJS web application framework.</li>
+                <li><strong>MongoDB:</strong> This is a free open source NOSQL document database with scalability and flexibility. Data are stored in flexible documents with JSON data.</li>
+                <li><strong>Mongoose:</strong> This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.</li>
+                <li><strong>Heroku:</strong> The API was deployed via Heroku, enabling cloud hosting and continuous deployment.</li>
+              </ul>
+            <br>
+            <a href="https://github.com/karidreyer/movie_api" target="_blank" rel="noopener noreferrer">View the Project Repository</a>
+            <br>
+            <br>
+            <br>
+            <a href="work.html" class="button">Back to Projects</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://github.com/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/github_icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+</html>

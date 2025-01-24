@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - React PWA App</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/kd-favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Reset/Normalization -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.production.css" type="text/css">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Logo -->
+        <img src="img/kd-logo.svg" alt="Personal logo of Kari Dreyer, a text logo in uppercase letters that consists of my name" class="page-header__item" >
+        
+        <!-- Navigation -->
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" aria-label="About Kari" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="work-content">
+        <h1>Work</h1>
+        <div class="project-item">
+            <h2>Meet - A React PWA</h2>
+            <p>Meet is a serverless, progressive web application (PWA) built with React, built using test-driven development (TDD). The app allows users to view details about upcoming events from the Google Calendar API, search for events by city, adjust the number of events they want to display, and view the types of events in graph visualizations.</p>
+            <div class="project-photos">
+                <img src="img/meet-home.png" alt="Screenshot of the Meet App home screen" />
+                <img src="img/meet-location.png" alt="Screenshot of the Meet App location selector" />
+            </div>
+            <h4>Features</h4>
+                <ul>
+                    <li>Filter Events by City.</li>
+                    <li>Show/Hide Event Details.</li>
+                    <li>Specify Number of Events.</li>
+                    <li>Use the App When Offline.</li>
+                    <li>Add an App Shortcut to the Home Screen.</li>
+                    <li>Display Charts Visualizing Event Details.</li>
+                </ul>
+
+            <h4>Technologies Used</h4>
+            <ul>
+                <li><strong>React:</strong> The app is a React application, enabling a dynamic and component-based architecture.</li>
+                <li><strong>Test-Driven Development (TDD):</strong> The app was built using the TDD technique to ensure reliability and maintainability.</li>
+                <li><strong>Google Calendar API:</strong> Used to fetch event data, with OAuth2 authentication flow for secure access.</li>
+                <li><strong>AWS Lambda:</strong> Serverless functions are utilized as the authorization server, replacing traditional servers.</li>
+              </ul>
+
+            <a href="https://karidreyer.github.io/meet/" target="_blank" rel="noopener noreferrer">View the Project</a> <br>
+            <a href="https://github.com/karidreyer/meet" target="_blank" rel="noopener noreferrer">View the Project Repository</a>
+            <br>
+            <br>
+            <br>
+            <a href="work.html" class="button">Back to Projects</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://github.com/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/github_icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/karidreyer" target="_blank" rel="noopener noreferrer">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+</html>
