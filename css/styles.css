@@ -203,7 +203,9 @@ main {
   }
 
   .project-list__item {
-    background-color: var(--secondary-color);
+    background-color: white;
+    border-color: var(--secondary-color);
+    border-width: 5px;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -221,6 +223,36 @@ main {
     grid-row: 1 / 3;
   }
 }
+
+.project-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive columns */
+  gap: 20px; /* Add space between images */
+  justify-content: center; /* Center the grid on the page */
+  margin: 20px 0; /* Add spacing above and below the section */
+}
+
+.project-photos img {
+  width: 100%; /* Make the images responsive */
+  max-width: 400px; /* Limit the max width of each image */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.project-video {
+  display: flex;
+  justify-content: center; /* Centers the video horizontally */
+  margin: 20px 0; /* Adds spacing above and below the video */
+}
+
+.project-video video {
+  max-width: 40%; /* Set the maximum width to 40% of the container or screen */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Optional: Rounded corners for aesthetics */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for styling */
+}
+
 
 /* || CONTACT PAGE */
 
@@ -272,5 +304,16 @@ main {
 
   h1 {
     font-size: var(--large-font-size-reduced);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-photos {
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center align images */
+  }
+
+  .project-photos img {
+    width: 80%; /* Adjust width for smaller screens */
   }
 }
