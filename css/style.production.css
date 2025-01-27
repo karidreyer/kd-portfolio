@@ -160,104 +160,21 @@ main {
 /* || ABOUT PAGE */
 
 .about-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
-.sun {
-  -webkit-animation: 5s color-change infinite alternate linear;
-          animation: 5s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.cloud-front {
-  -webkit-animation: 30s cloud-front-move infinite alternate linear;
-          animation: 30s cloud-front-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-front-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-front-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-
-.cloud-back {
-  -webkit-animation: 34s cloud-back-move infinite alternate linear;
-          animation: 34s cloud-back-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-back-move {
-  from {
-    -webkit-transform: translate(450px, 50px);
-            transform: translate(450px, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 50px);
-            transform: translate(100px, 50px);
-  }
-}
-
-@keyframes cloud-back-move {
-  from {
-    -webkit-transform: translate(450px, 50px);
-            transform: translate(450px, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 50px);
-            transform: translate(100px, 50px);
-  }
+.about-content__portrait {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-self: center;
 }
 
 /* || WORK PAGE */
